@@ -11,18 +11,26 @@
 @media screen and (max-width: 600px) {
     body {
         background-image: linear-gradient(135deg, 
-        #f5f7fa 0%, #c3cfe2 100%);
+        #6ca7ff 0%, #c3cfe2 100%);
         font-family: 'Lato', sans-serif;
         font-size: 14px;
+        margin-left: auto;
+        margin-right:auto;
     }
     article, aside {
         font-size: 1.2rem;
+        padding:2rem;
+        border: 0.1px solid darkgrey ;
+    }
+    article > img {
+        max-width: 100%;
     }
     h1, h2, h3 {
         font-family: 'Montserrat', sans-serif;
     }
     h1 {
         font-size: 4rem;
+        text-align: center;
     }
     h2 {
         font-size: 2.2rem;
@@ -31,4 +39,60 @@
         max-width: 70ch;
         line-height: 1.5;
     }
+    header {
+        height: 55vh;
+        background-image: url(assets/img/studentsbg.png);
+        background-attachment:fixed;
+        background-position: center, top;
+        background-size: cover;
+        clear: both;
+        width:100%;
+        margin: 0;
+        color: white;
+        padding: 4rem 0 0;
+    }
+    header > div {
+        position:relative;
+        top: 4rem;
+        width: 95vw;
+        background-color: #c5192d;
+        padding-top:2rem;
+        padding-bottom:2rem;
+        margin:auto;
+    }
+    header > div > p {
+        font-size: 1.2rem;
+        text-align: left;
+        display: block;
+        padding-left: 2rem;
+    }
+    main {
+        box-shadow: 0px, 0px, 5px, 0px, darkgrey ;
+        background-color: whitesmoke;
+        width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    article:first-of-type {
+        background-color: #c5192d;
+        padding:2rem ;
+        margin: auto;
+        margin-top:4rem;
+    }
+    ul >li:nth-child(1)::marker {
+        content: "\1F64C"
+    }
+    ul >li:nth-child(2)::marker {
+        content: "\1F3EB"
+    }
+    ul >li:nth-child(3)::marker {
+        content: "\1F4DA"
+    }
+    footer {
+        background-color: #c5192d;
+        width: 95vw;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    
 }
